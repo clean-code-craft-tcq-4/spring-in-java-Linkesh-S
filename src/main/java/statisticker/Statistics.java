@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.*;
 public class Statistics 
 {
-    private float average, min, max;
+    private static float average, min, max;
     public static Statistics getStatistics(List<___> numbers) {
         float Max=numbers.get(0);
         float Min=numbers.get(0);
