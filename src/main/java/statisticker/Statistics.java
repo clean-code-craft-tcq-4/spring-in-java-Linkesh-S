@@ -28,12 +28,13 @@ public class Statistics
             Max=i;
         }
         }
-        Stats.setMax(Max);
-        Stats.setMin(Min);
+        Stats s=new Stats();
+        s.setMax(Max);
+        s.setMin(Min);
         float sum=0;
         for(Float i:numbers){
         sum+=i;
         }
-        Stats.setAverage(sum/numbers.size());
+        s.setAverage(sum/numbers.size());
      }
 }
