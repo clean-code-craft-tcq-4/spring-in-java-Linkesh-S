@@ -16,9 +16,11 @@ public class Statistics
     }
     public static Stats s=new Stats();
     public static Stats getStatistics(List<Float> numbers) {
-       if(!(numbers.isEmpty())) {float Max=numbers.get(0);
+       if(!(numbers.isEmpty())) {
+        float Max=numbers.get(0);
         float Min=numbers.get(0);
-        for(float i:numbers){
+        for(float i:numbers)
+        {
         if(i<Min)
         {
             Min=i;
@@ -32,11 +34,12 @@ public class Statistics
         s.setMax(Max);
         s.setMin(Min);
         float sum=0;
-        for(Float i:numbers){
+        for(Float i:numbers)
+        {
         sum+=i;
         }
-        s.setAverage(sum/numbers.size());
+        s.setAverage(sum/numbers.size());}
         return s;
      }
-}
+
 }
