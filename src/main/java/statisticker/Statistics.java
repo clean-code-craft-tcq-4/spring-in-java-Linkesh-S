@@ -6,7 +6,10 @@ public class Statistics
 {
     private float average, min, max;
     public static Statistics getStatistics(List<___> numbers) {
-        //implement the computation of statistics here
+        float Max=,Min;
+        for(float i:numbers){
+        
+        }
         this.max = Collections.max(numbers);
         this.min = Collections.min(numbers);
         float sum=0;
