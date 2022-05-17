@@ -5,7 +5,14 @@ import java.util.*;
 public class Statistics 
 {
     public class Stats{
-        static float average, min, max;
+        float average, min, max;
+        void setAverage(float avg){
+            this.average=avg;}
+        void setMin(float Min){
+            this.min=Min;}
+        void setMin(float Max){
+            this.max=Max;}
+        
     }
     
     public static Stats getStatistics(List<Float> numbers) {
@@ -21,12 +28,12 @@ public class Statistics
             Max=i;
         }
         }
-        Stats.max = Max;
-        Stats.min = Min;
+        Stats.setMax(Max);
+        Stats.setMin(Min);
         float sum=0;
         for(Float i:numbers){
         sum+=i;
         }
-        Stats.average=sum/numbers.size();
-    }
+        Stats.setAverage(sum/numbers.size());
+     }
 }
