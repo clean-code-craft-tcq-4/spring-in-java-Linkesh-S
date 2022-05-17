@@ -8,7 +8,7 @@ public class Statistics
         float average, min, max;
     }
     
-    public static Stats getStatistics(List<___> numbers) {
+    public static Stats getStatistics(List<Float> numbers) {
         float Max=numbers.get(0);
         float Min=numbers.get(0);
         for(float i:numbers){
