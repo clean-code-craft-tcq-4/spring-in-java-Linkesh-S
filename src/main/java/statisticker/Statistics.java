@@ -15,7 +15,7 @@ public class Statistics
         }
         if(i>Max)
         {
-            Max=i
+            Max=i;
         }
         }
         this.max = Max;
