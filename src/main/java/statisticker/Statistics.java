@@ -4,8 +4,11 @@ import java.util.List;
 import java.util.*;
 public class Statistics 
 {
-    private static float average, min, max;
-    public static Statistics getStatistics(List<___> numbers) {
+    private static class Stats{
+        float average, min, max;
+    }
+    
+    public static Stats getStatistics(List<___> numbers) {
         float Max=numbers.get(0);
         float Min=numbers.get(0);
         for(float i:numbers){
@@ -18,12 +21,12 @@ public class Statistics
             Max=i;
         }
         }
-        this.max = Max;
-        this.min = Min;
+        Stats.max = Max;
+        Stats.min = Min;
         float sum=0;
         for(Float i:numbers){
         sum+=i;
         }
-        this.average=sum/numbers.size();
+        Stats.average=sum/numbers.size();
     }
 }
