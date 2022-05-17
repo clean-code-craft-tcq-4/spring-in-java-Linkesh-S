@@ -6,12 +6,20 @@ public class Statistics
 {
     private float average, min, max;
     public static Statistics getStatistics(List<___> numbers) {
-        float Max=,Min;
+        float Max=numbers.get(0);
+        float Min=numbers.get(0);
         for(float i:numbers){
-        
+        if(i<Min)
+        {
+            Min=i;
         }
-        this.max = Collections.max(numbers);
-        this.min = Collections.min(numbers);
+        if(i>Max)
+        {
+            Max=i
+        }
+        }
+        this.max = Max;
+        this.min = Min;
         float sum=0;
         for(Float i:numbers){
         sum+=i;
