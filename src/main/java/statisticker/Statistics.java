@@ -14,7 +14,7 @@ public class Statistics
             this.max=Max;}
         
     }
-    
+    public Stats s=new Stats();
     public static Stats getStatistics(List<Float> numbers) {
         float Max=numbers.get(0);
         float Min=numbers.get(0);
@@ -28,7 +28,7 @@ public class Statistics
             Max=i;
         }
         }
-        Stats s=new Stats();
+        
         s.setMax(Max);
         s.setMin(Min);
         float sum=0;
