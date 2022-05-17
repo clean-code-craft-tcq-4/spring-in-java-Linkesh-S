@@ -16,7 +16,7 @@ public class Statistics
     }
     public static Stats s=new Stats();
     public static Stats getStatistics(List<Float> numbers) {
-        float Max=numbers.get(0);
+       if(!(numbers.isEmpty())) {float Max=numbers.get(0);
         float Min=numbers.get(0);
         for(float i:numbers){
         if(i<Min)
@@ -38,4 +38,5 @@ public class Statistics
         s.setAverage(sum/numbers.size());
         return s;
      }
+}
 }
