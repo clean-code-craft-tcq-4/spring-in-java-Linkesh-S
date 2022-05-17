@@ -36,5 +36,6 @@ public class Statistics
         sum+=i;
         }
         s.setAverage(sum/numbers.size());
+        return s;
      }
 }
