@@ -10,7 +10,7 @@ public class Statistics
             this.average=avg;}
         void setMin(float Min){
             this.min=Min;}
-        void setMin(float Max){
+        void setMax(float Max){
             this.max=Max;}
         
     }
