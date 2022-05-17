@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.*;
 public class Statistics 
 {
-    public class Stats{
-        float average, min, max;
+    public static class Stats{
+      static float average, min, max;
         void setAverage(float avg){
             this.average=avg;}
         void setMin(float Min){
