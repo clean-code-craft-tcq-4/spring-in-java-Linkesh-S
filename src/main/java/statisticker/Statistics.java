@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.*;
 public class Statistics 
 {
-    private static class Stats{
+    public class Stats{
         float average, min, max;
     }
     
