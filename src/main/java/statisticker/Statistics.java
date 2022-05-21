@@ -48,5 +48,26 @@ public class Statistics
         }
         return s;
      }
+    public interface IAlerter{
+    public void setTrue();
+    }
+    public static class LEDAlert implements IAlerter{
+        boolean emailSent;
+        @Override
+        public void setTrue(){
+            this.emailSent=true;
+        }
+    
+    }
+    public static class EmailAlert implements IAlerter{
+        boolean ledGlows;
+        @Override
+        public void setTrue(){
+            this.ledGlows=true;
+        }
+    }
+    
+    
+    }
 
 }
