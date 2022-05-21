@@ -48,39 +48,7 @@ public class Statistics
         }
         return s;
      }
-    public interface IAlerter{
-    public void setTrue();
-    }
-    public static class LEDAlert implements IAlerter{
-        boolean emailSent;
-        @Override
-        public void setTrue(){
-            this.emailSent=true;
-        }
-    
-    }
-    public static class EmailAlert implements IAlerter{
-        boolean ledGlows;
-        @Override
-        public void setTrue(){
-            this.ledGlows=true;
-        }
-    }
-    public static class StatsChecker{
-        Float maxThresholds;
-        IAlerter alerters[];
-    StatsChecker(Float maxThresholds, IAlerter alerters[]){
-        this.maxThresholds=maxThresholds;
-        this.alerters=alerters;
-    }
-        public void checkAndAlert(List<Float> numbers){
-        Collections.sort(numbers);
-            if(this.maxThresholds < numbers.get((numbers.size()-1))){
-            this.alerters[0].setTrue();
-            this.alerters[1].setTrue();
-            }
-        }
-    }
+   
     
     }
 
