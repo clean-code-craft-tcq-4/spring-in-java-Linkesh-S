@@ -7,6 +7,6 @@ public class EmailAlert implements IAlerter{
         boolean emailSent;
         @Override
         public void setTrue(){
-            this.ledGlows=true;
+            this.emailSent=true;
         }
     }
