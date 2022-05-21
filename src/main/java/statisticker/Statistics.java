@@ -71,9 +71,9 @@ public class Statistics
         IAlerter alerters[];
     StatsChecker(Float maxThresholds, IAlerter alerters[]){
         this.maxThresholds=maxThresholds;
-        this.alerters[]=alerters[];
+        this.alerters=alerters;
     }
-        public checkAndAlert(List<Float> numbers){
+        public void checkAndAlert(List<Float> numbers){
         Collections.sort(numbers);
             if(this.maxThresholds < numbers.get((numbers.size()-1))){
             this.alerters[0].setTrue();
