@@ -1,4 +1,8 @@
-    public class StatsChecker{
+package statisticker;
+import java.util.List;
+import java.util.*;    
+
+public class StatsChecker{
         Float maxThresholds;
         IAlerter alerters[];
     StatsChecker(Float maxThresholds, IAlerter alerters[]){
