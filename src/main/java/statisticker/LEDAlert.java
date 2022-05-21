@@ -2,10 +2,10 @@ package statisticker;
 import java.util.List;
 import java.util.*;
 public class LEDAlert implements IAlerter{
-        boolean emailSent;
+        boolean ledGlows;
         @Override
         public void setTrue(){
-            this.emailSent=true;
+            this.ledGlows=true;
         }
     
     }
