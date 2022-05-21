@@ -38,7 +38,14 @@ public class Statistics
         {
         sum+=i;
         }
-        s.setAverage(sum/numbers.size());}
+        s.setAverage(sum/numbers.size());
+       }
+        else if(numbers.isEmpty())
+        {
+            s.setMax(Float.NaN);
+            s.setMin(Float.NaN);
+            s.setAverage(Float.NaN);
+        }
         return s;
      }
 
