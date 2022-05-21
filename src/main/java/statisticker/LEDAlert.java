@@ -3,6 +3,6 @@ package statisticker;
 import java.util.List;
 import java.util.*;
 
-public static class LEDAlert{
+public  class LEDAlert{
 public  boolean ledGlows;  
 }
